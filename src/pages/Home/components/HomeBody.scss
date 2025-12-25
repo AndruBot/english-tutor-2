@@ -1,0 +1,133 @@
+.home-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-section {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 519px;
+  margin-top: 30px;
+}
+
+.image-section img {
+  width: 376px;
+  height: auto;
+}
+
+
+.home-body-title {
+  font-size: 5rem;
+}
+
+.home-body-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Hide mobile container by default */
+.home-mobile-container {
+  display: none;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* Mobile Body */
+.home-mobile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  .mobile-header-title {
+    font-size: 8rem;
+    line-height: 1.4;
+    font-weight: 100;
+  }
+
+  .mobile-header-subtitle {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+  }
+
+
+  .mobile-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.home-body-title {
+  font-weight: 100;
+  font-size: 5em;
+}
+
+.home-body-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.home-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Show mobile container only on screens < 768px */
+@media (max-width: 767.98px) {
+  .home-container:not(.home-mobile-container) {
+    display: none;
+  }
+  
+  .home-mobile-container {
+    display: block;
+  }
+}
+
+.home-mobile-body .mobile-header-title {
+  font-size: 120px;
+}
+
+/* Show mobile container only on screens < 768px */
+@media (max-width: 520px) {
+  .home-mobile-body .mobile-header-title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 448px) {
+  .home-mobile-body .mobile-header-title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 410px) {
+  .home-mobile-body .mobile-header-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 373px) {
+  .home-mobile-body .mobile-header-title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 338px) {
+  .home-mobile-body .mobile-header-title {
+    font-size: 60px;
+  }
+}
+
+/* Hide mobile container on desktop */
+@media (min-width: 768px) {
+  .home-mobile-container {
+    display: none;
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../../styles/colors.scss';
+
+.classes-header-title {
+  font-size: 86px;
+  font-weight: 400;
+  width: 100%;
+  @media (max-width: 468px) {
+    font-size: 56px;
+  }
+
+  @media (max-width: 767.98px) {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+.classes-header {
+  background-color: $green-color;
+  padding: 20px 0;
+  color: $black-color;
+  width: 100%;
+
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
+
+  .classes-header-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-menu {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      @media (max-width: 767.98px) {
+        display: none;
+      }
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: $black-color;
+        transition: background-color 0.3s;
+        font-weight: 500;
+
+        &:hover {
+          background-color: lighten($green-color, 10%);
+        }
+      }
+    }
+
+    // .burger-menu {
+    //   @media (max-width: 767.98px) {
+    //     display: block;
+    //     margin-left: auto; /* Push to the right */
+    //   }
+    // }
+  }
+
+  .testimonials-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $grey-color;
+    color: $black-color;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: darken($grey-color, 10%);
+    }
+  }
+}

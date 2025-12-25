@@ -1,0 +1,65 @@
+$header-block-min-width: 121px;
+$header-logo-width: 104px;
+
+.home-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .logo {
+    font-size: 1.5em;
+    margin-right: 20px;
+    width: $header-logo-width;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: #000;
+      transition: background-color 0.3s;
+
+      &.about {
+        flex: 1;
+        min-width: $header-block-min-width; 
+        background-color: $pink-color;
+      }
+      &.classes {
+        flex: 1;
+        min-width: $header-block-min-width;
+        background-color: $green-color;
+      }
+      &.faq {
+        flex: 1;
+        min-width: $header-block-min-width;
+        background-color: $blue-color;
+      }
+      &.schedule {
+        background-color: $red-color;
+        width: 376px;
+      }
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    @media (max-width: 767.98px) {
+      display: block;
+      margin-left: auto; /* Push to the right */
+    }
+  }
+}

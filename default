@@ -1,0 +1,9 @@
+# HTTP to HTTPS redirect
+server {
+    listen 80;
+    listen [::]:80;
+    server_name veronikafranz.ru veronikafranz.com www.veronikafranz.ru;
+
+    # Redirect all HTTP requests to HTTPS
+    return 301 https://veronikafranz.ru$request_uri;
+}

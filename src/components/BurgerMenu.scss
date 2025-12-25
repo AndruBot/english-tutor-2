@@ -1,0 +1,98 @@
+@import '../styles/colors.scss';
+
+/* Position and sizing of burger icon */
+.bm-burger-button {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color and position of the cross shape close button*/
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* Sidebar wrapper properties */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  width: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $white-color;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  background-color: $background-color;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  color: $black-color;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    background-color: transparent; // keep original background visible
+    opacity: 0.5; // slightly dim for hover feedback
+  }
+}
+
+/* Styling for the Home page menu items based on HomeHeader.scss */
+.bm-item#home {
+  background-color: $white-color;
+}
+
+.bm-item#about {
+  background-color: $pink-color;
+}
+
+.bm-item#classes {
+  background-color: $green-color;
+}
+
+.bm-item#faq {
+  background-color: $blue-color;
+}
+
+.bm-item#booking {
+  background-color: $red-color;
+}
+
+/* Outback and other styles */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+}

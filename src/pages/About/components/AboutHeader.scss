@@ -1,0 +1,89 @@
+@import '../../../styles/colors.scss';
+
+.about-header-title {
+  font-size: 86px;
+  font-weight: 400;
+  width: 100%;
+  @media (max-width: 468px) {
+    font-size: 56px;
+  }
+  @media (max-width: 767.98px) {
+    text-align: center;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+.about-header {
+  background-color: $blue-color;
+  padding: 20px 0;
+  color: $black-color;
+  width: 100%;
+
+  .about-header-content {
+    margin: 0 auto;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 767.98px) {
+      padding: 0 20px;
+    }
+  }
+
+  .testimonials-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $grey-color;
+    color: $black-color;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+    min-width: 376px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+
+    @media (max-width: 1200px) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 975px) {
+      min-width: 170px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: darken($grey-color, 10%);
+    }
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $black-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

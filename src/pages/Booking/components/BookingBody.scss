@@ -1,0 +1,348 @@
+@import '../../../styles/colors.scss';
+
+.booking-body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  flex: 1;
+  gap: 20px;
+}
+
+.booking-text-content {
+  padding-top: 20px;
+  min-width: 340px;
+  
+  .booking-paragraph {
+    line-height: 1.6;
+    color: $black-color;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+}
+
+.schedule-section, .price-section, .contact-section {
+  margin: 60px 0;
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: $black-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.schedule-grid, .price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.schedule-item, .price-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  h3 {
+    color: $black-color;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 8px 0;
+    color: $black-color;
+  }
+}
+
+.contact-section {
+  text-align: center;
+  
+  p {
+    margin-bottom: 20px;
+    color: $black-color;
+  }
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: $grey-color;
+  color: $black-color;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background-color: darken($grey-color, 10%);
+  }
+}
+
+.booking-paragraph {
+  font-family: 'Mateur', serif;
+  line-height: 1.4;
+  color: $black-color;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.booking-help-section {
+  margin: 30px 0;
+  
+
+  
+  .price-block-wrapper {
+  margin-top: 20px;
+  // padding: 20px;
+}
+
+.price-block {
+  text-align: center;
+}
+
+.price-row {
+  text-align: left;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.price-amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.price-separator {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.booking-button {
+  background-color: $blue-color;
+  color: $black-color;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  height: 26px;
+
+
+  &:hover {
+    background-color: darken($blue-color, 10%);
+  }
+}
+
+.booking-button-wrapper {
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.booking-help-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  
+  &-item {
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 1;
+      color: $black-color;
+      padding-left: 10px;
+      position: relative;
+      
+      &:before {
+        content: '-';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.booking-reviews-section {
+  flex: 1;
+}
+
+.booking-reviews-cloud-wrapper {
+  width:300px;
+  margin:5px;
+}
+
+.booking-reviews-cloud-wrapper-full {
+  width:634px;
+  margin:5px;
+}
+
+.booking-revievs-cloud {
+  padding: 20px;
+  min-height: 169px;
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background: white;
+  border-radius: 40px;
+}
+
+.booking-revievs-cloud-full 
+{
+  position: relative;
+  width: 634px;
+  height: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 40px;
+}
+
+.booking-revievs-cloud:after {
+  content: "";
+  top: 124px;
+  right: 300px;
+  position: absolute;
+  border: 0px solid;
+  display: block;
+  width: 40px;
+  height: 44px;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 20px 0px 0px 0px white;
+  transform: rotate(0deg);
+}
+
+.booking-revievs-cloud-full:after {
+  content: "";
+  top: 160px;
+  right: 634px;
+  position: absolute;
+  border: 0px solid;
+  display: block;
+  width: 40px;
+  height: 44px;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 20px 0px 0px 0px white;
+  transform: rotate(0deg);
+}
+
+
+.booking-reviews-cloud-title {
+  font-weight: 600;
+}
+
+.booking-reviews-cloud-subtitle {
+  margin-top: 5px;
+}
+
+.booking-reivews-cloud-line {
+  border-bottom: 1px solid $black-color; /* Light grey line */
+  width: 100%; /* Occupy full width of its container */
+  margin-top: 5px;
+  margin-bottom: 10px;
+  // margin: 15px 0;
+}
+
+.booking-reviews-cloud-description {
+  font-size: 10px;
+}
+
+.booking-reviews-cloud-grid-1 {
+  display: flex;
+  gap: 25px;
+}
+
+.booking-reviews-cloud-grid-2 {
+  display: flex;
+}
+
+.booking-reviews-cloud-grid-3 {
+  display: flex;
+}
+
+.booking-reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  bottom: 75px;
+}
+
+.booking-title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.booking-subtitle {
+  font-weight: 400;
+  margin-top: 10px;
+  max-width: 60%;
+}
+
+// Responsive styles
+@media (max-width: 767.98px) {
+  // .booking-body {
+  //   padding: 20px;
+  // }
+  
+  .schedule-grid, .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-subtitle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .booking-reviews-cloud-grid-1 {
+    flex-direction: column;
+  }
+
+  .booking-reviews-cloud-wrapper {
+    width: 100%;
+  }
+
+  .booking-revievs-cloud {
+    width: 100%;
+  }
+
+  .booking-reviews-cloud-wrapper-full {
+    width:100%;
+    margin:5px;
+  }
+
+  .booking-revievs-cloud-full {
+    width: 100%;
+  }
+
+  .booking-revievs-cloud:after {
+    display: none;
+  }
+
+  .booking-revievs-cloud-full:after {
+    display: none;
+  }
+}

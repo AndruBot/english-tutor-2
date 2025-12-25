@@ -1,0 +1,24 @@
+// /* Mobile container styles */
+
+// /* Mobile Menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .mobile-menu-item {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:active {
+      background-color: #e0e0e0;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+
+.faq-container:not(.faq-mobile-container) {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  background-color: $background-color;
+}
+
+.faq-container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-mobile-container {
+  display: none;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+/* Show mobile container only on screens < 768px */
+@media (max-width: 767.98px) {
+  .faq-container:not(.faq-mobile-container) {
+    display: none;
+  }
+  
+  .faq-mobile-container {
+    display: block;
+  }
+}
+
+/* Show mobile container only on screens < 768px */
+@media (max-width: 585px) {
+  .faq-mobile-body .mobile-header-title {
+    font-size: 2rem;
+  }
+}
+
+/* Hide mobile container on desktop */
+@media (min-width: 768px) {
+  .faq-mobile-container {
+    display: none;
+  }
+}
