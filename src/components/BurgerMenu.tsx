@@ -42,10 +42,10 @@ const BurgerMenu: React.FC = () => {
       className="burger-menu-custom"
     >
       <Link id="home" className="menu-item" to="/" onClick={() => setIsOpen(false)}>HOME</Link>
-      <Link id="about" className="menu-item" to="/about" onClick={() => setIsOpen(false)}>ABOUT</Link>
-      <Link id="classes" className="menu-item" to="/classes" onClick={() => setIsOpen(false)}>ABOUT CLASSES</Link>
-      <Link id="faq" className="menu-item" to="/faq" onClick={() => setIsOpen(false)}>FAQ</Link>
+      <Link id="about" className="menu-item" to="/about" onClick={() => setIsOpen(false)}>ABOUT ME</Link>
+      <Link id="classes" className="menu-item" to="/classes" onClick={() => setIsOpen(false)}>CLASSES</Link>
       <Link id="booking" className="menu-item" to="/booking" onClick={() => setIsOpen(false)}>SCHEDULE AND BOOKING</Link>
+      <Link id="faq" className="menu-item" to="/faq" onClick={() => setIsOpen(false)}>FAQ</Link>
     </Menu>
   );
 };

@@ -5,7 +5,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import './AboutMobileBody.scss';
 
 import review1 from '/src/assets/review1.png';
-import review2 from '/src/assets/review2.png';
+import review2 from '/src/assets/review2.jpg';
+import review3 from '/src/assets/review3.jpg';
+import review4 from '/src/assets/review4.jpg';
+import review5 from '/src/assets/review5.png';
+import review6 from '/src/assets/review6.jpg';
 
 const AboutMobileBody = () => {
   return (
@@ -50,6 +54,18 @@ const AboutMobileBody = () => {
             </div>
             <div className="review-slide">
               <img src={review2} alt="Review 2" className="review-image" />
+            </div>
+            <div className="review-slide">
+              <img src={review3} alt="Review 3" className="review-image" />
+            </div>
+            <div className="review-slide">
+              <img src={review4} alt="Review 4" className="review-image" />
+            </div>
+            <div className="review-slide">
+              <img src={review5} alt="Review 5" className="review-image" />
+            </div>
+            <div className="review-slide">
+              <img src={review6} alt="Review 6" className="review-image" />
             </div>
           </Slider>
         </div>  

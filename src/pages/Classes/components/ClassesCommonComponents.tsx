@@ -23,12 +23,16 @@ export const ClassesButton: React.FC<ButtonProps> = ({ text, link = '#', btnClas
   );
 };
 
-export const PriceBlock = ({ prices }: { prices: { eu: number, rub: number } }) => (
+export const PriceBlock = ({ prices }: { prices: { eu: number; rub?: number } }) => (
   <div className="price-block">
     <div className="price-row">
       <span className="price-amount">{prices.eu}€</span>
-      <span className="price-separator">/</span>
-      <span className="price-amount">{prices.rub}₽</span>
+      {prices.rub != null && (
+        <>
+          <span className="price-separator">/</span>
+          <span className="price-amount">{prices.rub}₽</span>
+        </>
+      )}
     </div>
   </div>
 );

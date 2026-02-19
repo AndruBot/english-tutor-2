@@ -10,10 +10,10 @@ const HomeHeader = () => {
         <img src={logo} alt="Nika Churikova Logo" className="logo" />
       </Link>
       <nav className="nav-menu">
-        <Link to="/about" className="about">ABOUT</Link>
-        <Link to="/classes" className="classes">ABOUT CLASSES</Link>
-        <Link to="/faq" className="faq">FAQ</Link>
+        <Link to="/about" className="about">ABOUT ME</Link>
+        <Link to="/classes" className="classes">CLASSES</Link>
         <Link to="/booking" className="schedule">SCHEDULE AND BOOKING</Link>
+        <Link to="/faq" className="faq">FAQ</Link>
       </nav>
       <div className="burger-menu">
         <BurgerMenu />

@@ -22,7 +22,7 @@
   .footer-content {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 5px;
     flex: 1;
 
     .footer-section {
@@ -50,8 +50,12 @@
 
   .social-links {
     display: flex;
-    gap: 25px;
+    gap: 100px;
     margin-top: 0;
+
+    @media (max-width: 767.98px) {
+      gap: 20px;
+    }
 
     .social-link {
       color: inherit;

@@ -7,7 +7,7 @@ const AboutHeader = () => {
   return (
     <header className="about-header">
       <div className="about-header-content">
-        <h1 className="about-header-title">ABOUT</h1>
+        <h1 className="about-header-title">ABOUT ME</h1>
         <Link to="/classes" className="testimonials-button">
           ОТЗЫВЫ СТУДЕНТОВ
         </Link>
