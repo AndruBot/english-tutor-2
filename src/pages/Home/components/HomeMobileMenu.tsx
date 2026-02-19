@@ -5,16 +5,16 @@ const HomeMobileMenu = () => {
   return (
     <div className="mobile-menu">
       <Link to="/about" className="mobile-menu-item mobile-menu-item-about">
-        <span>ABOUT ME</span>
+        ABOUT ME
       </Link>
       <Link to="/classes" className="mobile-menu-item mobile-menu-item-classes">
-        <span>CLASSES</span>
+        ABOUT CLASSES
       </Link>
       <Link to="/booking" className="mobile-menu-item mobile-menu-item-schedule">
-        <span>SCHEDULE AND BOOKING</span>
+        BOOKING
       </Link>
       <Link to="/faq" className="mobile-menu-item mobile-menu-item-faq">
-        <span>FAQ</span>
+        FAQ
       </Link>
     </div>
   );

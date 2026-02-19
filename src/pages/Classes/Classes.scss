@@ -18,12 +18,23 @@
   display: none;
   margin-top: 20px;
 }
-/* Show mobile container only on screens < 768px */
+/* Desktop/iPad: show desktop container and reviews from 768px and up */
+@media (min-width: 768px) {
+  .classes-container:not(.classes-mobile-container) {
+    display: flex;
+  }
+
+  .classes-reviews-section {
+    display: block; /* Ensure desktop reviews visible on desktop and iPad */
+  }
+}
+
+/* Mobile only: switch to mobile container below 768px */
 @media (max-width: 767.98px) {
   .classes-container:not(.classes-mobile-container) {
     display: none;
   }
-  
+
   .classes-mobile-container {
     display: block;
   }

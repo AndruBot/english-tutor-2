@@ -15,9 +15,11 @@
   background-color: $background-color;
   color: #333;
   font-family: Arial, sans-serif;
-  // @media (max-width: 767.98px) {
-  //   display: none;
-  // }
+
+  /* Hide footer on mobile */
+  @media (max-width: 767.98px) {
+    display: none;
+  }
 
   .footer-content {
     display: flex;

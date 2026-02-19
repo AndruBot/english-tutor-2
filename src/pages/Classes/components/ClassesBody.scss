@@ -201,6 +201,8 @@
 
 .classes-reviews-section {
   flex: 1;
+  min-width: 0; /* Allow flex item to shrink below content size */
+  min-height: 400px; /* Ensure section has space and stays visible */
 }
 
 .classes-reviews-cloud-wrapper {
@@ -224,79 +226,14 @@
   .slick-dots {
     bottom: -25px;
   }
-}
 
-.classes-revievs-cloud {
-  padding: 20px;
-  min-height: 169px;
-  position: relative;
-  width: 300px;
-  height: 100%;
-  background: white;
-  border-radius: 40px;
-}
+  &.classes-reviews-cloud-wrapper .slick-list {
+    min-height: 169px;
+  }
 
-.classes-revievs-cloud-full 
-{
-  position: relative;
-  width: 634px;
-  height: 100%;
-  padding: 20px;
-  background: white;
-  border-radius: 40px;
-}
-
-.classes-revievs-cloud:after {
-  content: "";
-  top: 124px;
-  right: 300px;
-  position: absolute;
-  border: 0px solid;
-  display: block;
-  width: 40px;
-  height: 44px;
-  background-color: transparent;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  box-shadow: 20px 0px 0px 0px white;
-  transform: rotate(0deg);
-}
-
-.classes-revievs-cloud-full:after {
-  content: "";
-  top: 160px;
-  right: 634px;
-  position: absolute;
-  border: 0px solid;
-  display: block;
-  width: 40px;
-  height: 44px;
-  background-color: transparent;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  box-shadow: 20px 0px 0px 0px white;
-  transform: rotate(0deg);
-}
-
-
-.classes-reviews-cloud-title {
-  font-weight: 600;
-}
-
-.classes-reviews-cloud-subtitle {
-  margin-top: 5px;
-}
-
-.classes-reivews-cloud-line {
-  border-bottom: 1px solid $black-color; /* Light grey line */
-  width: 100%; /* Occupy full width of its container */
-  margin-top: 5px;
-  margin-bottom: 10px;
-  // margin: 15px 0;
-}
-
-.classes-reviews-cloud-description {
-  font-size: 10px;
+  &.classes-reviews-cloud-wrapper-full .slick-list {
+    min-height: 225px;
+  }
 }
 
 .classes-reviews-cloud-grid-1 {
@@ -318,6 +255,7 @@
   gap: 20px;
   position: relative;
   bottom: 75px;
+  width: 100%;
 }
 
 
@@ -332,26 +270,109 @@
   }
 }
 
-@media (max-width: 1025px) {
-  .classes-reviews-cloud-grid-1 {
+@media (max-width: 1180px) {
+  .classes-body {
+    flex-direction: column; /* Stack text and reviews so both visible on tablet */
+  }
+
+  .classes-text-content {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .classes-paragraph {
+      text-align: center;
+    }
+  }
+
+  .classes-help-section {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .classes-help-title {
+      text-align: center;
+    }
+
+    .classes-help-list {
+      text-align: left;
+      display: inline-block;
+    }
+
+    .price-block-wrapper,
+    .classes-button-wrapper {
+      width: 100%;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .classes-button {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .classes-reviews-section {
+    min-height: 350px;
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  .classes-reviews-grid {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .classes-reviews-cloud-grid-1,
+  .classes-reviews-cloud-grid-2,
+  .classes-reviews-cloud-grid-3 {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .classes-reviews-cloud-grid-1 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    width: 634px;
+    max-width: 634px;
   }
 
   .classes-reviews-cloud-wrapper {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .classes-reviews-cloud-wrapper-full {
     width: 100%;
+    max-width: 634px;
+    margin: 5px auto;
   }
 
   .classes-revievs-cloud {
     width: 100%;
-  }
-
-  .classes-reviews-cloud-wrapper-full {
-    width:100%;
-    margin:5px;
+    min-height: 169px;
   }
 
   .classes-revievs-cloud-full {
     width: 100%;
+    min-height: 225px;
   }
 
   .classes-revievs-cloud:after {

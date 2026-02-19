@@ -4,6 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './ClassesBody.scss';
 import { ClassesButton, PriceBlock } from './ClassesCommonComponents';
+import {
+  Review1Short, Review2Short, Review3Short, Review4Short, Review5Short, Review6Short,
+  Review3Full, Review4Full, Review5Full, Review6Full, Review7Full, Review8Full,
+  Review9Full, Review10Full, Review11Full,
+} from './reviews';
 
 const reviewCarouselSettings = {
   dots: true,
@@ -11,8 +16,7 @@ const reviewCarouselSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 4000,
+  autoplay: false,
   arrows: false,
 };
 
@@ -64,105 +68,37 @@ const ClassesBody = () => {
           <div className="classes-reviews-cloud-grid-1">
             <div className="classes-reviews-cloud-wrapper classes-review-carousel">
               <Slider {...reviewCarouselSettings}>
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="classes-revievs-cloud">
-                    <div className="classes-reviews-cloud-title">
-                      Илья, 34, проджект-менеджер
-                    </div>
-                    <div className="classes-reviews-cloud-subtitle">
-                      г. Лимассол, Кипр
-                      <br />
-                      Pre-intermediate-Intermediate (2023-2026)
-                    </div>
-                    <div className="classes-reivews-cloud-line"></div>
-                    <div className="classes-reviews-cloud-description">
-                      «Мне нравится, что каждое занятие проходит без зубрежки, в игровой форме.
-                      <br /><br />
-                      Поскольку я руководитель в интернациональной команде, самое полезное для меня было изучение have to /must / should и able to, managed to. Применяю это каждый день в работе.»
-                    </div>
-                  </div>
-                ))}
+                <Review1Short key="1" />
+                <Review2Short key="2" />
+                <Review3Short key="3" />
               </Slider>
             </div>
             <div className="classes-reviews-cloud-wrapper classes-review-carousel">
               <Slider {...reviewCarouselSettings}>
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="classes-revievs-cloud">
-                    <div className="classes-reviews-cloud-title">
-                      Евгений, 38, разработчик
-                    </div>
-                    <div className="classes-reviews-cloud-subtitle">
-                      г. Кейптаун, ЮАР
-                      Pre-intermediate-Intermedaite (2021)
-                      <br />
-                    </div>
-                    <div className="classes-reivews-cloud-line"></div>
-                    <div className="classes-reviews-cloud-description">
-                      «За полгода я успел пройти полностью
-                      курс Intermediate от Oxford.
-                      Результатом очень доволен! Теперь я
-                      свободно путешествую, занимаюсь онлайн
-                      и не боюсь завести разговор с местнымми
-                      жителями.
-                      <br /><br />
-                      Nika, thank you! Keep in touch!»
-                    </div>
-                  </div>
-                ))}
+                <Review4Short key="4" />
+                <Review5Short key="5" />
+                <Review6Short key="6" />
               </Slider>
             </div>
           </div>
           <div className="classes-reviews-cloud-grid-2">
             <div className="classes-reviews-cloud-wrapper-full classes-review-carousel">
               <Slider {...reviewCarouselSettings}>
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="classes-revievs-cloud-full">
-                    <div className="classes-reviews-cloud-title">
-                      Полина, 22, тату-мастер, гончар
-                    </div>
-                    <div className="classes-reviews-cloud-subtitle">
-                      г. Санкт-Петербург, Россия
-                      <br />
-                      Elementary-Intermediate Plus (2021-...)
-                    </div>
-                    <div className="classes-reivews-cloud-line"></div>
-                    <div className="classes-reviews-cloud-description">
-                      «Люблю и жду наши занятия как в первый раз! Всё так же ухожу с чувством счастья и удовлетворенности после наших встреч.
-                      Наш формат, конечно, сильно меняется за столько лет, например, сейчас мы много болтаем, но это классно, ведь раньше я бы не смогла так много говорить и рассуждать о всяком.
-                      <br /> <br />
-                      Мне очень нравится твой творческий подход к оформлению материалов и выбор тем, на основе которых мы все это изучаем — очень ценю твою гибкость и чуткость.
-                      Живые диалоги, творческие домашки и свобода выбора тем по интересам - любимое!»
-                    </div>
-                  </div>
-                ))}
+                <Review3Full key="3" />
+                <Review5Full key="5" />
+                <Review6Full key="6" />
+                <Review7Full key="7" />
+                <Review8Full key="8" />
               </Slider>
             </div>
           </div>
           <div className="classes-reviews-cloud-grid-3">
             <div className="classes-reviews-cloud-wrapper-full classes-review-carousel">
               <Slider {...reviewCarouselSettings}>
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="classes-revievs-cloud-full">
-                <div className="classes-reviews-cloud-title">
-                  Евгения, 26, COO
-                </div>
-                <div className="classes-reviews-cloud-subtitle">
-                  г. Лимассол, Кипр
-                  <br />
-                  Pre-intermediate–Intermediate (2024-...)
-                </div>
-                <div className="classes-reivews-cloud-line"></div>
-                <div className="classes-reviews-cloud-description">
-                  «Я постоянно меняла репетиторов по английскому, и вот уже чуть больше двух лет занимаюсь с Никой  и за всё это время это самые комфортные занятия. Ника всегда очень доброжелательна, терпеливая и внимательная, и даже когда я не могу прийти на занятие, она всегда подстраивается под мой график.
-                  <br /> <br />
-                  Благодаря тому, что Ника подбирает уроки индивидуально под каждого ученика, мне действительно интересно и удобно заниматься. За два года я значительно увеличила словарный запас, мне стало гораздо легче говорить.
-                  <br /><br />
-                  Раньше у меня были проблемы с восприятием информации на слух, а сейчас стало намного проще.
-                  <br />
-                  Ника топчик ❤️»
-                </div>
-                  </div>
-                ))}
+                <Review4Full key="4" />
+                <Review9Full key="9" />
+                <Review10Full key="10" />
+                <Review11Full key="11" />
               </Slider>
             </div>
           </div>

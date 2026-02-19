@@ -19,6 +19,12 @@
 }
 
 
+.title-no-wrap {
+  white-space: nowrap;
+  font-size: 1em;
+  font-weight: inherit;
+}
+
 .home-body-title {
   font-size: 5rem;
 }
@@ -44,14 +50,16 @@
 
   .mobile-header-title {
     font-size: 8rem;
-    line-height: 1.4;
+    line-height: 0.8;
     font-weight: 100;
+    margin-bottom: 0.15em;
   }
 
   .mobile-header-subtitle {
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 100;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 500;
+    margin-top: 0;
   }
 
 
@@ -66,11 +74,14 @@
 .home-body-title {
   font-weight: 100;
   font-size: 5em;
+  line-height: 1.15;
+  margin-bottom: 0.2em;
 }
 
 .home-body-subtitle {
   font-size: 0.8rem;
   font-weight: 500;
+  margin-top: 0;
 }
 
 .home-container {
@@ -92,6 +103,10 @@
 
 .home-mobile-body .mobile-header-title {
   font-size: 120px;
+
+  .title-no-wrap {
+    font-size: 1em;
+  }
 }
 
 /* Show mobile container only on screens < 768px */

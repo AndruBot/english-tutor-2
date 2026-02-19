@@ -11,7 +11,7 @@ const HomeHeader = () => {
       </Link>
       <nav className="nav-menu">
         <Link to="/about" className="about">ABOUT ME</Link>
-        <Link to="/classes" className="classes">CLASSES</Link>
+        <Link to="/classes" className="classes">ABOUT CLASSES</Link>
         <Link to="/booking" className="schedule">SCHEDULE AND BOOKING</Link>
         <Link to="/faq" className="faq">FAQ</Link>
       </nav>

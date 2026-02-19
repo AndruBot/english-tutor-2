@@ -1,0 +1,85 @@
+@import '../../../styles/colors.scss';
+
+.classes-revievs-cloud {
+  padding: 20px;
+  min-height: 169px;
+  position: relative;
+  width: 300px;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.classes-revievs-cloud-full {
+  position: relative;
+  width: 634px;
+  min-height: 225px;
+  padding: 20px;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.classes-revievs-cloud:after {
+  content: "";
+  top: 147px;
+  right: 292px;
+  position: absolute;
+  border: 0px solid;
+  display: block;
+  width: 37px;
+  height: 20px;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 20px 0px 0px 0px white;
+  transform: rotate(0deg);
+}
+
+.classes-revievs-cloud-full:after {
+  content: "";
+  top: 180px;
+  right: 626px;
+  position: absolute;
+  border: 0px solid;
+  display: block;
+  width: 37px;
+  height: 44px;
+  background-color: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 20px 0px 0px 0px white;
+  transform: rotate(0deg);
+}
+
+.classes-reviews-cloud-title {
+  font-weight: 600;
+}
+
+.classes-reviews-cloud-subtitle {
+  margin-top: 5px;
+}
+
+.classes-reivews-cloud-line {
+  border-bottom: 1px solid $black-color;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.classes-reviews-cloud-description {
+  font-size: 10px;
+  flex: 1;
+  min-height: 0;
+}
+
+@media (max-width: 767.98px) {
+  .classes-revievs-cloud:after,
+  .classes-revievs-cloud-full:after {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+export { default as Review1Short } from './Review1Short';
+export { default as Review2Short } from './Review2Short';
+export { default as Review3Short } from './Review3Short';
+export { default as Review4Short } from './Review4Short';
+export { default as Review5Short } from './Review5Short';
+export { default as Review6Short } from './Review6Short';
+export { default as Review3Full } from './Review3Full';
+export { default as Review4Full } from './Review4Full';
+export { default as Review5Full } from './Review5Full';
+export { default as Review6Full } from './Review6Full';
+export { default as Review7Full } from './Review7Full';
+export { default as Review8Full } from './Review8Full';
+export { default as Review9Full } from './Review9Full';
+export { default as Review10Full } from './Review10Full';
+export { default as Review11Full } from './Review11Full';

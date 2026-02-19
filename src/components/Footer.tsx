@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='footer-break'/>
       <div className="footer-content">
         <div className="footer-sign">
-          ©2024 NIKA CHURIKOVA
+          ©2026 NIKA CHURIKOVA
         </div>
         <div className="footer-socials">
           <div className="social-links">
