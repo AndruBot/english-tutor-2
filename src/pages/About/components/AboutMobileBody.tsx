@@ -26,6 +26,10 @@ const AboutMobileBody = () => {
           <b>Образование:</b> СГСПУ, Направление «Перевод и переводоведение».
         </p>
 
+        <p className="about-mobile-paragraph about-mobile-paragraph-3">
+          Сдала экзамены <b>FCE</b> и <b>CAE</b> — уровни <b>UPPER-INTERMEDIATE (B2)</b> и <b>ADVANCED (С1)</b> и регулярно прохожу курсы повышения квалификации.
+        </p>
+
         <div className="help-mobile-section">
           <h2 className="help-mobile-title">ПОМОГУ:</h2>
           <ul className="help-mobile-list">
@@ -70,11 +74,13 @@ const AboutMobileBody = () => {
           </Slider>
         </div>  
         
-        <p className="about-mobile-paragraph about-mobile-paragraph-3">
-          Моё вдохновение — это путешествия и погружение в разные культуры. На сегодняшний день 
-          я посетила 27 стран и мне есть, о чём рассказать. Сотрудничала с FIFA и Coca-Cola на Чемпионате мира по футболу 2018. Говорю на французском и немецком, изучаю греческий.
-        </p>
         <p className="about-mobile-paragraph about-mobile-paragraph-4">
+          Моё вдохновение — это путешествия и погружение в разные культуры. На сегодняшний день 
+          я посетила 28 стран и мне есть, о чём рассказать. Сотрудничала с FIFA и Coca-Cola на Чемпионате мира по футболу 2018. Говорю на французском и немецком, изучаю греческий и испанский.
+
+          Переехала из Самары, несколько лет прожила на солнечном Кипре и сейчас нахожусь в Валенсии.
+        </p>
+        <p className="about-mobile-paragraph about-mobile-paragraph-5">
           Переехала из Самары и живу на солнечном Кипре.
         </p>
       </div>    

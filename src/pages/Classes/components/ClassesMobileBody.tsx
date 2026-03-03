@@ -1,26 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './ClassesMobileBody.scss';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { ClassesButton, PriceBlock } from './ClassesCommonComponents';
-
-const reviewsData = [
-  {
-    name: 'НАТАЛЬЯ',
-    age: 27,
-    location: 'г. Самара',
-    period: 'Elementary-Intermediate (2018-2020)',
-    description: '«Самое сложное в английском — это начать, а если начал, то не бросить. Всегда найдётся причина, чтобы не заниматься. Спасибо, что втянула меня в обучение так, что уже два года я на английской волне. Теперь английский — это удовольствие!»',
-  },
-  {
-    name: 'АННА',
-    age: 30,
-    location: 'г. Москва',
-    period: 'Pre-Intermediate (2020-2022)',
-    description: '«Вероника — прекрасный преподаватель! Занятия проходят очень интересно и продуктивно. Мой английский значительно улучшился, и я чувствую себя гораздо увереннее. Очень рекомендую!»',
-  }
-];
+import {
+  Review1Short,
+  Review2Short,
+  Review3Short,
+  Review4Short,
+  Review5Short,
+  Review6Short,
+} from './reviews';
 
 // Arrow components must be defined before they are used in sliderSettings
 function SampleNextArrow(props: any) {
@@ -77,13 +68,13 @@ const ClassesMobileBody = () => {
           <div className="classes-help-section">
             <h2 className="classes-help-title">ENGLISH BREAKFAST CLUB</h2>
             <ul className="classes-help-list">
-              <li className="classes-help-list-item">атмосферные завтраки в историческом центре Лимассола,</li>
-              <li className="classes-help-list-item">безопасная языковая среда,</li>
+              <li className="classes-help-list-item">атмосферные завтраки в историческом центре Валенсии, </li>
+              <li className="classes-help-list-item">безопасная языковая среда, </li>
               <li className="classes-help-list-item">актуальные темы для обсуждений,</li>
               <li className="classes-help-list-item">проработка лексики в комьюнити like-minded girls.</li>
             </ul>
             <div className="price-block-wrapper">
-              <PriceBlock prices={{ eu: 15, rub: 1500 }} />
+              <PriceBlock prices={{ eu: 10 }} />
             </div>
             <div className="classes-button-wrapper">
               <ClassesButton text="ВСТУПИТЬ В КЛУБ" link="https://forms.gle/fb5VYiNdF6pY13kr9" />
@@ -104,32 +95,35 @@ const ClassesMobileBody = () => {
             <div className="classes-button-wrapper">
               <ClassesButton text="ЗАНИМАТЬСЯ ИНДИВИДУАЛЬНО" link="https://forms.gle/j1gCQdXcVb4nFehD7" />
             </div>
+            <div className="classes-button-wrapper">
+              <ClassesButton text="Задать другой вопрос" link="https://t.me/veronika_franz" btnClass="classes-ask-question-button" />
+            </div>
           </div>
         </div>
       </div>
       
-      {/* Mobile reviews slider */}
+      {/* Mobile reviews slider - same 6 short reviews as desktop */}
       <div className="classes-mobile-reviews-section-wrapper">
         <div className="classes-mobile-reviews-section">
           <Slider {...sliderSettings}>
-            {reviewsData.map((review, index) => (
-              <div key={index} className="classes-reviews-cloud-wrapper">
-                <div className="classes-revievs-cloud">
-                  <div className="classes-reviews-cloud-title">
-                    {review.name}, {review.age} лет
-                  </div>
-                  <div className="classes-reviews-cloud-subtitle">
-                    {review.location}
-                    <br />
-                    {review.period}
-                  </div>
-                  <div className="classes-reivews-cloud-line" />
-                  <div className="classes-reviews-cloud-description">
-                    {review.description}
-                  </div>
-                </div>
-              </div>
-            ))}
+            <div className="classes-reviews-cloud-wrapper">
+              <Review1Short />
+            </div>
+            <div className="classes-reviews-cloud-wrapper">
+              <Review2Short />
+            </div>
+            <div className="classes-reviews-cloud-wrapper">
+              <Review3Short />
+            </div>
+            <div className="classes-reviews-cloud-wrapper">
+              <Review4Short />
+            </div>
+            <div className="classes-reviews-cloud-wrapper">
+              <Review5Short />
+            </div>
+            <div className="classes-reviews-cloud-wrapper">
+              <Review6Short />
+            </div>
           </Slider>
         </div>
       </div>

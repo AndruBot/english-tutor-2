@@ -98,7 +98,7 @@ const ClassesBody = () => {
                 <Review4Full key="4" />
                 <Review9Full key="9" />
                 <Review10Full key="10" />
-                <Review11Full key="11" />
+                {/* <Review11Full key="11" /> */}
               </Slider>
             </div>
           </div>
