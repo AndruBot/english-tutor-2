@@ -1,6 +1,8 @@
 npm run build
 
-rsync -avz ./dist/* english:/root/projects/english-tutor --progress -v
+ssh english 'rm -rf /root/projects/english-tutor/*'
+
+rsync -avz ./dist/ english:/root/projects/english-tutor/ --progress -v
 
 rsync -avz nginx.conf english:/etc/nginx/conf.d/nginx.conf --progress -v
 
