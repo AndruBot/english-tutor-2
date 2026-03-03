@@ -1,19 +1,7 @@
 import React from 'react';
 import ClassesReviewCloud from '../ClassesReviewCloud';
+import { reviewTexts } from './reviewTexts';
 
-const Review5Full = () => (
-  <ClassesReviewCloud
-    full
-    title="Елизавета, 26, Проджект-Менеджер"
-    subtitle={<>г. Тбилиси, Грузия<br />Intermediate-Upper-intermediate (2024-...)</>}
-    description={<>
-      «Я очень люблю твои уроки, не хочу пропускать ни одного 🫰🏼🫰🏼
-      <br /><br />
-      Самая большая польза, на мой взгляд, в наполнении урока. Мы поднимаем актуальные и насущные темы, и это все оборачивается в «in English, please», поэтому заниматься интересно, а новую информацию очень легко усвоить. Сама подготовка к урокам на космическом уровне, форматы гораздо шире классических упражнений и теории, геймификация и интерактивность делают процесс еще более увлекательным. И ты очень интересная собеседница btw 
-      <br /><br />
-      Из пожеланий только возможность продолжать и продолжать) мне все нравится»
-    </>}
-  />
-);
+const Review5Full = () => <ClassesReviewCloud {...reviewTexts.review5Full} full />;
 
 export default Review5Full;

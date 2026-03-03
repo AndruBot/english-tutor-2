@@ -3,23 +3,14 @@ import './BookingMobileBody.scss';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-const reviewsData = [
-  {
-    name: 'НАТАЛЬЯ',
-    age: 27,
-    location: 'г. Самара',
-    period: 'Elementary-Intermediate (2018-2020)',
-    description: '«Самое сложное в английском — это начать, а если начал, то не бросить. Всегда найдётся причина, чтобы не заниматься. Спасибо, что втянула меня в обучение так, что уже два года я на английской волне. Теперь английский — это удовольствие!»',
-  },
-  {
-    name: 'АННА',
-    age: 30,
-    location: 'г. Москва',
-    period: 'Pre-Intermediate (2020-2022)',
-    description: '«Вероника — прекрасный преподаватель! Занятия проходят очень интересно и продуктивно. Мой английский значительно улучшился, и я чувствую себя гораздо увереннее. Очень рекомендую!»',
-  }
-];
+import {
+  Review1Short,
+  Review2Short,
+  Review3Short,
+  Review4Short,
+  Review5Short,
+  Review6Short,
+} from '../../Classes/components/reviews';
 
 // Arrow components must be defined before they are used in sliderSettings
 function SampleNextArrow(props: any) {
@@ -84,29 +75,29 @@ const BookingMobileBody = () => {
         </div>
       </div>
 
-      {/* Reviews Slider */}
-      <div className='booking-mobile-reviews-section-wrapper'>
+      {/* Reviews Slider - same as Classes page mobile */}
+      <div className="booking-mobile-reviews-section-wrapper">
         <div className="booking-mobile-reviews-section">
           <div className="booking-mobile-reviews-title-background" />
           <Slider {...sliderSettings}>
-            {reviewsData.map((review, index) => (
-              <div key={index} className="booking-reviews-cloud-wrapper">
-                <div className="booking-revievs-cloud">
-                  <div className="booking-reviews-cloud-title">
-                    {review.name}, {review.age} лет
-                  </div>
-                  <div className="booking-reviews-cloud-subtitle">
-                    {review.location}
-                    <br />
-                    {review.period}
-                  </div>
-                  <div className="booking-reivews-cloud-line"></div>
-                  <div className="booking-reviews-cloud-description">
-                    {review.description}
-                  </div>
-                </div>
-              </div>
-            ))}
+            <div className="booking-reviews-cloud-wrapper">
+              <Review1Short />
+            </div>
+            <div className="booking-reviews-cloud-wrapper">
+              <Review2Short />
+            </div>
+            <div className="booking-reviews-cloud-wrapper">
+              <Review3Short />
+            </div>
+            <div className="booking-reviews-cloud-wrapper">
+              <Review4Short />
+            </div>
+            <div className="booking-reviews-cloud-wrapper">
+              <Review5Short />
+            </div>
+            <div className="booking-reviews-cloud-wrapper">
+              <Review6Short />
+            </div>
           </Slider>
         </div>
       </div>

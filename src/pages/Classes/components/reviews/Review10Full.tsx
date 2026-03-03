@@ -1,19 +1,7 @@
 import React from 'react';
 import ClassesReviewCloud from '../ClassesReviewCloud';
+import { reviewTexts } from './reviewTexts';
 
-const Review9Full = () => (
-  <ClassesReviewCloud
-    full
-    title="Лидия, 28, Банкир"
-    subtitle={<>г. Москва, Россия<br />Pre-intermediate-Intermedaite (2023-2025)</>}
-    description={<>
-      «Есть желание изучать язык не только для достижения цели, но и для удовольствия. В плане интересной информации, плана урока, подобранных материалов - равных, кажется, нет😅 
-      <br /><br />
-      Самое полезное и запоминающееся - тематические классы, в которых сторителлинг состоит из наборов заданий, очень интересно проходить.
-      <br /><br />
-      С изучением новых слов всегда сложности, спасибо за напоминалки и «пинки» в этом направлении даже после уроков🙈»
-    </>}
-  />
-);
+const Review10Full = () => <ClassesReviewCloud {...reviewTexts.review10Full} full />;
 
-export default Review9Full;
+export default Review10Full;
