@@ -18,11 +18,11 @@ function SampleNextArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', right: '-20px' }}
+      style={{ ...style, display: 'block', right: '-40px' }}
       onClick={onClick}
     >
       <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L9 9L1 17" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M1 1L9 9L1 17" stroke="#888" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     </div>
   );
@@ -33,11 +33,11 @@ function SamplePrevArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', left: '-20px' }}
+      style={{ ...style, display: 'block', left: '-40px' }}
       onClick={onClick}
     >
       <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M9 1L1 9L9 17" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9 1L1 9L9 17" stroke="#888" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     </div>
   );

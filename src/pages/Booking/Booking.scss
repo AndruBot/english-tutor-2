@@ -16,7 +16,7 @@
 .booking-mobile-container {
   display: none;
   margin-top: 20px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 /* Show mobile container only on screens < 768px */
 @media (max-width: 767.98px) {
@@ -44,15 +44,47 @@
 }
 
 .booking-mobile-reviews-section-wrapper {
-  max-width: 350px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 28px;
+  background-color: $blue-color;
+  padding-bottom: 48px;
+  margin-top: 24px;
+
+  /* Full-bleed: break out of page-template's 20px horizontal padding on mobile */
+  @media (max-width: 767.98px) {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% + 40px);
+    max-width: 100vw;
+    box-sizing: content-box;
+  }
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+  }
 }
 
 .booking-mobile-reviews-section {
-  padding: 20px;
-  padding-top: 0px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Center each slide's content so the card is not shifted */
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .slick-slide > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
   @media (min-width: 768px) {
     display: none;
@@ -83,7 +115,8 @@
     width: 30px;
     height: 30px;
     z-index: 1;
-    top: 120px;
+    top: 50%;
+    transform: translateY(-50%);
     &::before {
       display: none; /* Hide default slick arrows */
     }
@@ -94,21 +127,42 @@
   }
 
   .slick-prev {
-    left: -20px;
+    left: -40px;
   }
 
   .slick-next {
-    right: -20px;
+    right: -40px;
   }
 
   .booking-reviews-cloud-wrapper {
     width: 100%;
+    max-width: 350px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  /* Shared Classes review cloud - full width on mobile like Classes page */
+  /* Shared Classes review cloud - small card, grey background, left-aligned text on Booking mobile only */
   .classes-revievs-cloud {
     width: 100% !important;
+    max-width: 350px;
+    min-height: 217px;
+    background-color: #E8E8E8 !important;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+
+    .classes-reviews-cloud-title {
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .classes-reviews-cloud-subtitle,
+    .classes-reviews-cloud-description {
+      text-align: left;
+      font-size: 13px;
+      font-weight: 400;
+    }
   }
 }
