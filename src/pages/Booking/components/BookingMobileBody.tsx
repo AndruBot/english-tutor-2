@@ -52,6 +52,8 @@ const sliderSettings = {
   arrows: true,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
+  autoplay: true,
+  autoplaySpeed: 15000,
 };
 
 const BookingMobileBody = () => {
