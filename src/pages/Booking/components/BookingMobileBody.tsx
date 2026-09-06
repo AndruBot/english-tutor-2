@@ -72,7 +72,7 @@ const BookingMobileBody = () => {
 
           <div className="booking-mobile-text-content">
             <p className="booking-mobile-subtitle">Бронирование осуществляется по предоплате 100%. Перенос или отмена возможны за 24 часа до урока. В случае переноса или отмены менее чем за 24 часа до урока, предоплата не возвращается / урок списывается с абонемента.</p>
-            <p className="booking-mobile-subtitle-time">рабочее время: пн — пт с 9:00 до 20:00 UTC+2</p>
+            <p className="booking-mobile-subtitle-time">рабочее время: пн — пт с 9:00 до 18:00 UTC+2</p>
           </div>
         </div>
       </div>
